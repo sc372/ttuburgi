@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "45809101688",
+    "firebase_url": "https://ttubergi-fa699.firebaseio.com",
+    "project_id": "ttubergi-fa699",
+    "storage_bucket": "ttubergi-fa699.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45809101688:android:266c63795b1bceaa",
+        "android_client_info": {
+          "package_name": "com.TT.kitcoop.ttuburgi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45809101688-rnava481hf8iuamh4feoub53pn2rnbvu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.TT.kitcoop.ttuburgi",
+            "certificate_hash": "5c46c7f1bdda2ddaec53cb22fa03923ec8daf075"
+          }
+        },
+        {
+          "client_id": "45809101688-m21tct9rjuhv30ceeed27t09keaq93ck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5aajfPGeJ24Yi-L2XJvHyfHMbOpOnby0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "45809101688-m21tct9rjuhv30ceeed27t09keaq93ck.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

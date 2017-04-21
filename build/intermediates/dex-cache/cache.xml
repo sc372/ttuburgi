@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/sc372/Dev/tt/ttubergi/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/home/sc372/Dev/tt/ttubergi/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7b431187d9b026f08707f4385fdf2992d72f959f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sc372/Dev/tt/ttubergi/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="284fc2290307658e41a522fa3773b8fcdf2290b4">
+        <dex dex="/home/sc372/Dev/tt/ttubergi/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_1bd0f61f19bd5a751bdf7166309b9a4fe082660c/classes.dex" />
+    </item>
+
+</items>

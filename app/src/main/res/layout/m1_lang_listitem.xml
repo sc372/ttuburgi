@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/m1lang_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/m1lang_tv1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="22dp"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark_normal" />
+
+    <TextView
+        android:id="@+id/m1lang_tv1"
+        style="@style/ListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/m1lang_iv"
+        android:paddingTop="5dp"
+        android:text="JAVA" />
+
+    <TextView
+        android:id="@+id/m1lang_tv2"
+        style="@style/ListsubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/m1lang_tv1"
+        android:layout_below="@+id/m1lang_tv1"
+        android:layout_marginBottom="15dp"
+        android:text="설명설명" />
+
+    <TextView
+        android:id="@+id/m1lang_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:textSize="24dp"
+        android:textColor="@color/pointColor"
+        android:layout_marginEnd="18dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

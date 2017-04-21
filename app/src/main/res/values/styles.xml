@@ -1,0 +1,103 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 전체 테마 -->
+    <style name="TTuburgiTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/colorBg</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="buttonStyle">@style/Btn_g</item>
+        <item name="editTextStyle">@style/EditTextStyle</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 버튼 스타일 -->
+    <style name="Btn_w" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/pointColor</item>
+    </style>
+
+    <style name="Btn_g" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@color/pointColor</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Btn_dg" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@color/darkGray</item>
+    </style>
+
+    <!--텍스트 스타일 -->
+    <style name="Title1">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="SubTitle1">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/hintGray</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--리스트뷰 텍스트 스타일-->
+    <style name="ListTitle">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="ListsubTitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/hintGray</item>
+    </style>
+
+
+    <!-- EditText 스타일 -->
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@color/hintGray</item>
+        <item name="android:textCursorDrawable">@android:color/white</item>
+
+    </style>
+
+    <!-- padding -->
+    <style name="Layoutpadding">
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">25dp</item>
+        <item name="android:paddingBottom">25dp</item>
+    </style>
+
+    <!--학습창 레이아웃 스타일-->
+    <style name="LayoutCode" parent="Layoutpadding">
+        <item name="android:background">@color/layout_txt_bg</item>
+    </style>
+
+    <style name="LayoutTxt" parent="Layoutpadding">
+
+    </style>
+
+    <!--퀴즈 영역 스타일-->
+    <style name="StudyQuiz" parent="Layoutpadding">
+        <item name="android:background">@color/layout_txt_bg</item>
+
+    </style>
+
+    <!-- 북마크 Bt-->
+    <style name="Bookmark">
+
+    </style>
+
+    <!-- 코멘트 Bt-->
+    <style name="Comment">
+
+    </style>
+
+
+
+</resources>

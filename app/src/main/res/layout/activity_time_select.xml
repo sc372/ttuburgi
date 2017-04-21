@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="학습알림 시간을 설정해 주세요." />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/selectTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/time_select"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/hintGray"
+            android:textColorHint="@color/hintGray" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center"
+        android:text="매일 3개의 학습 내용이 배달됩니다."
+        android:textColor="@color/hintGray" />
+
+    <Button
+        android:id="@+id/selecttime"
+        style="@style/Btn_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Select Time" />
+
+</LinearLayout>
