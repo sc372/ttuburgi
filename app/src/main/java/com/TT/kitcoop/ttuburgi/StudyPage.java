@@ -110,6 +110,8 @@ public class StudyPage extends AppCompatActivity {
                 // 정답 aaaa 와 check를 비교해서 맞으면 다이알로그 띄우고 학습창으로 넘어가기. 아니면 틀렸다고 토스트 띄우기
                 if (answer.equals(check)){
                     onClickView(v);
+                    // 학습 완료 데이터 베이스 생성
+                    userStudyDataAdapter.completeUserStudy(selectSub);
                 } else {
                     Toast.makeText(StudyPage.this, "틀렸습니다.", Toast.LENGTH_SHORT).show();
                 }
@@ -127,17 +129,34 @@ public class StudyPage extends AppCompatActivity {
         final Drawable iconBookmark_on = getResources().getDrawable(R.drawable.icon_bookmark_on);
         //iconBookmark_off.setBounds(100,50,130,80);
 
+        // 북마크 토글 버튼 설정
+        tgBookmark.setText(studyname);
+
+        Cursor bookmarkStudy = userStudyDataAdapter.getBookmarkList();
+        while(bookmarkStudy.moveToNext()) {
+            String value = bookmarkStudy.getString(0);
+
+            if(value == studyname) {
+                tgBookmark.setCompoundDrawablesWithIntrinsicBounds(iconBookmark_on, null, null, null);
+                //userStudyDataAdapter.bookmarkDelete(studyname);
+                break;
+            }
+        }
+
         // 북마크 토글 버튼 on, off 시 이벤트 주기
         tgBookmark.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 if (tgBookmark.isChecked()){
-                    // 북마크 on 일때
+                    // 북마크 on 일
                     tgBookmark.setCompoundDrawablesWithIntrinsicBounds(iconBookmark_on, null, null, null);
+                    userStudyDataAdapter.bookmarkInsert(studyname);
+
                 } else {
                     // 북마크 off 일때
                     tgBookmark.setCompoundDrawablesWithIntrinsicBounds(iconBookmark_off, null, null, null);
+                    userStudyDataAdapter.bookmarkDelete(studyname);
                 }
             }
         });

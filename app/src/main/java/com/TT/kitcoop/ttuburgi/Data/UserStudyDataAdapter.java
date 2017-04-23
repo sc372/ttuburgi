@@ -1,6 +1,8 @@
 package com.TT.kitcoop.ttuburgi.Data;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
@@ -45,6 +47,50 @@ public class UserStudyDataAdapter {
             throw e;
         }
         return this;
+    }
+
+    // 학습 완료 리스트 업
+    public void completeUserStudy(String completeSubject) {
+        mDB = userStudyDBHelper.getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put("studyname", completeSubject);
+        mDB.insert("complete", null, contentValues);
+    }
+
+    // 북마크 리스트 불러오기
+    public Cursor getBookmarkList() {
+
+        Cursor bookmarkCursor = null;
+        try {
+
+            String bookmarkSql = "select studyname from bookmark";
+            bookmarkCursor = mDB.rawQuery(bookmarkSql, null);
+            if (bookmarkCursor != null) {
+                bookmarkCursor.moveToNext();
+            }
+        } catch (SQLException e) {
+            Log.e(TAG, "getRandomList >>" + e.toString());
+            throw e;
+        }
+        return bookmarkCursor;
+    }
+
+    // 북마크 추가하기
+    public void bookmarkInsert(String bookmarkStudyname) {
+        mDB = userStudyDBHelper.getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put("studyname", bookmarkStudyname);
+        mDB.insert("bookmark", null, contentValues);
+    }
+
+    // 북마크 삭제하기
+    public void bookmarkDelete(String studyname) {
+        mDB = userStudyDBHelper.getWritableDatabase();
+        mDB.delete("bookmark", "studyname=?", new String[]{studyname});
     }
 
     public void closeUserStudy() {
