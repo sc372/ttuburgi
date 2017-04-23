@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "45809101688-r5a7fcj0qrvevhrpp10hrtm64qrrklf5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.TT.kitcoop.ttuburgi",
+            "certificate_hash": "3d00a74a557ce822471ec7914c618d39ae7c20b7"
+          }
+        },
+        {
+          "client_id": "45809101688-02thuk0iege5vnir6q4mpnbcbmop4gcj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.TT.kitcoop.ttuburgi",
+            "certificate_hash": "4dc3edc3312cd0c93543b7b8d3403205ee9a5c86"
+          }
+        },
+        {
           "client_id": "45809101688-rnava481hf8iuamh4feoub53pn2rnbvu.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

@@ -31,4 +31,10 @@
 
  <color name="layout_txt_bg">#252525</color>
 
+ <!--북마크-->
+ <color name="bookmark_bg">#263238</color>
+
+ <!--코멘트-->
+ <color name="comment_bg">#37474F</color>
+
 </resources>

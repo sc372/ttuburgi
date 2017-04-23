@@ -62,7 +62,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="25dp"
+                android:layout_margin="0dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:background="@color/layout_txt_bg"
                 android:orientation="vertical">
 
                 <Button
@@ -70,6 +73,7 @@
                     android:layout_width="360dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
                     android:text="퀴즈" />
 
                 <LinearLayout
@@ -120,14 +124,41 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:padding="0dp"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView16"
+                <LinearLayout
+                    style="@style/BookMark"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="코멘트 버튼" />
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        style="@style/ToggleBt"
+                        android:id="@+id/toggleBook_btn"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:drawableLeft="@drawable/icon_bookmark_off"
+                        android:textOff="북마크"
+                        android:textOn="북마크 완료" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Comment"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        style="@style/ToggleBt"
+                        android:id="@+id/toggleComm_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_comment_off"
+                        android:textOff="코멘트"
+                        android:textOn="코멘트" />
+                </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

@@ -2,6 +2,7 @@ package com.TT.kitcoop.ttuburgi;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -10,7 +11,9 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
+import com.TT.kitcoop.ttuburgi.Comment.Comment;
 import com.TT.kitcoop.ttuburgi.Data.StudyDataAdapter;
 import com.TT.kitcoop.ttuburgi.Data.UserStudyDataAdapter;
 import com.TT.kitcoop.ttuburgi.Dialog.CustomDialog;
@@ -115,13 +118,44 @@ public class StudyPage extends AppCompatActivity {
             }
         });
 
+        //북마크, 코멘트 부분
+        final ToggleButton tgBookmark = (ToggleButton)findViewById(R.id.toggleBook_btn);
+        final ToggleButton tgComment = (ToggleButton)findViewById(R.id.toggleComm_btn);
 
-        /*quizCheckBt.setOnClickListener(new View.OnClickListener() {
+        //북마크에 들어갈 이미지 셋팅
+        final Drawable iconBookmark_off = getResources().getDrawable(R.drawable.icon_bookmark_off);
+        final Drawable iconBookmark_on = getResources().getDrawable(R.drawable.icon_bookmark_on);
+        //iconBookmark_off.setBounds(100,50,130,80);
+
+        // 북마크 토글 버튼 on, off 시 이벤트 주기
+        tgBookmark.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onClickView(v);
+
+                if (tgBookmark.isChecked()){
+                    // 북마크 on 일때
+                    tgBookmark.setCompoundDrawablesWithIntrinsicBounds(iconBookmark_on, null, null, null);
+                } else {
+                    // 북마크 off 일때
+                    tgBookmark.setCompoundDrawablesWithIntrinsicBounds(iconBookmark_off, null, null, null);
+                }
             }
-        });*/
+        });
+
+        // 코멘트 버튼 on, off 일때 이벤트 => 현재 코멘트 토글은 필요 없음.
+        tgComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(StudyPage.this, Comment.class));
+
+                if (tgComment.isChecked()){
+                    // 코멘트 버튼 on일때
+
+                }else {
+                    // 코멘트 버튼 off일때
+                }
+            }
+        });
 
         //데이터베이스 닫기
         studyDataAdapter.closeStudy();

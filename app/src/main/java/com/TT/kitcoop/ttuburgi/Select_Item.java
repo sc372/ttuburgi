@@ -15,6 +15,11 @@ public class Select_Item {
         this.txt = txt;
     }
 
+    public Select_Item(String title, String txt){
+        this.title = title;
+        this.txt = txt;
+    }
+
     public int getIcon() {
         return icon;
     }

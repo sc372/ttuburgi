@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="webviewcode-1.0.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/695c40ebfe1d64e96d2c51aaf1eff33e0285a98c/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/695c40ebfe1d64e96d2c51aaf1eff33e0285a98c/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/Codeview-1.0.0/webviewcode/1.0.0/ac1da997da4c02a94f386ea795386c1319eaedec/webviewcode-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

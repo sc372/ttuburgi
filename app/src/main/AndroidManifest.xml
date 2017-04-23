@@ -39,6 +39,7 @@
         <activity android:name=".TimeSelectActivity" />
         <activity android:name=".Study_list" />
         <activity android:name=".StudyPage" />
+        <activity android:name=".Comment.Comment"/>
 
         <service
             android:name=".Alarm.MyService"

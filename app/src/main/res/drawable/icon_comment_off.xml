@@ -1,0 +1,8 @@
+<!-- drawable/check.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="36dp"
+    android:width="36dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path android:fillColor="#50E0E0E0" android:pathData="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z"/>
+</vector>

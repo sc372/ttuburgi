@@ -84,17 +84,50 @@
 
     <!--퀴즈 영역 스타일-->
     <style name="StudyQuiz" parent="Layoutpadding">
+        <item name="android:layout_margin">0dp</item>
         <item name="android:background">@color/layout_txt_bg</item>
 
     </style>
 
-    <!-- 북마크 Bt-->
-    <style name="Bookmark">
+    <style name="ToggleLayout">
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">70dp</item>
 
     </style>
 
-    <!-- 코멘트 Bt-->
-    <style name="Comment">
+    <!--토글버튼-->
+    <style name="ToggleBt">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingRight">70dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- 스터디 페이지 북마크 레이아웃-->
+    <style name="BookMark" parent="ToggleLayout">
+        <item name="android:background">@color/bookmark_bg</item>
+    </style>
+
+    <!-- 스터디 페이지 코멘트 레이아웃-->
+    <style name="Comment" parent="ToggleLayout">
+        <item name="android:background">@color/comment_bg</item>
+
+    </style>
+
+    <!--코멘트 페이지 작성자-->
+    <style name="CommentUser" >
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@color/layout_txt_bg</item>
+    </style>
+
+    <!--코멘트 페이지 내용-->
+    <style name="CommentTxt" >
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">40dp</item>
 
     </style>
 
